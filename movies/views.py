@@ -12,3 +12,6 @@ def home(request):
 def detail(request, id):
     data = Movie.objects.get(pk=id)
     return render(request, 'movies/detail.html', {'movie': data})
+
+def add(request):
+    return render(request, 'movies/add.html')

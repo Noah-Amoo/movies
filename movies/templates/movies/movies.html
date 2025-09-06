@@ -8,9 +8,10 @@
 <body>
     <h1>Movies</h1>
     <ul>
-    {% for movie in movies %}
-        <li><a href={{movie.id}}>{{movie.title}}</a></li>
-    {% endfor %}
-</ul>
+        {% for movie in movies %}
+            <li><a href={{movie.id}}>{{movie.title}}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/movies/add">Add A Movie</a>
 </body>
 </html>
