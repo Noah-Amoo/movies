@@ -7,7 +7,7 @@ def movies(request):
     return render(request, 'movies/movies.html', {'movies': data})
 
 def home(request):
-    return HttpResponse("I am home") 
+    return HttpResponse("Home Page") 
 
 def detail(request, id):
     data = Movie.objects.get(pk=id)
